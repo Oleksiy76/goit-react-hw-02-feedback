@@ -11,8 +11,7 @@ class App extends React.Component {
     bad: 0,
   };
 
-  onLeaveFeedback = event => {
-    const option = event.target.name;
+  onLeaveFeedback = option => {
     this.setState(prevState => {
       return {
         [option]: prevState[option] + 1,
